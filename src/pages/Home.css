@@ -1,0 +1,31 @@
+.main-logo {
+  display: block;
+  min-width: 150px;
+  max-width: 400px;
+  /* these will only apply once below min-width 350px */
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  width: 30%;
+}
+
+@media (min-width: 350px) {
+  .main-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-top-20px {
+  margin-top: 20px;
+}
