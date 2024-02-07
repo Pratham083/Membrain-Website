@@ -1,6 +1,7 @@
 import NavBar from '../components/NavBar';
 import mainLogo from '../assets/logo.svg';
 import downArrow from '../assets/down-arrow.png';
+import { GameButton } from '../components/GameButton';
 import './Home.css';
 
 const games = [
@@ -25,6 +26,9 @@ export const Home = () => {
         height="75px"
       ></img>
       <p className="center-text margin-top-20px">Scroll Down to Play</p>
+      {games.map((game, index) => {
+        return <GameButton key={index} buttonText={game}></GameButton>;
+      })}
     </>
   );
 };
