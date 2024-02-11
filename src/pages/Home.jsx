@@ -7,7 +7,7 @@ import './Home.css';
 const games = [
   'ZombiType',
   'Metronome',
-  'Geography',
+  'Memorize',
   'Solve',
   'Click',
   'Analyze',
@@ -19,16 +19,18 @@ export const Home = () => {
       <img className="main-logo" src={mainLogo} alt="Welcome to Membrain"></img>
       <p className="center-text">Membrain</p>
       <img
-        className="center-image"
+        className="down-arrow"
         src={downArrow}
         alt="V"
         width="75px"
         height="75px"
       ></img>
       <p className="center-text margin-top-20px">Scroll Down to Play</p>
-      {games.map((game, index) => {
-        return <GameButton key={index} buttonText={game}></GameButton>;
-      })}
+      <div className="button-grid">
+        {games.map((game, index) => {
+          return <GameButton key={index} buttonText={game}></GameButton>;
+        })}
+      </div>
     </>
   );
 };

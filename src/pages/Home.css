@@ -20,12 +20,36 @@
   text-align: center;
 }
 
-.center-image {
+@keyframes floating {
+  from {
+    top: -25px;
+  }
+  to {
+    top: 25px;
+  }
+}
+
+.down-arrow {
   display: block;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
+  animation-name: floating;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .margin-top-20px {
   margin-top: 20px;
+}
+
+.button-grid {
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 200px;
+  display: grid;
+  grid-template: 50% 50% / 1fr 1fr 1fr;
 }

@@ -1,0 +1,11 @@
+.game-button {
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: aliceblue;
+}
+
+.game-button:hover {
+  background-color: #404040;
+}
